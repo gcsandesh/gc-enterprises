@@ -1,4 +1,4 @@
-GC Clothing Store is an online clothing store created using Next.js.
+GC Enterprises is an online clothing store created using Next.js.
 
 
 ## Getting Started
