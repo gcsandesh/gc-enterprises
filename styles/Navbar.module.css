@@ -27,7 +27,71 @@
     font-size: 1.5rem;
 }
 
+.menuBtn {
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    border: 2.5px solid transparent;
+    transition: border 250ms ease;
+}
+
+/* .menuBtn:active{
+    scale: 0.5;
+} */
+
+/* .hamburgerTop, .hamburgerMiddle, .hamburgerBottom {
+    background-color: var(--s-dark);
+    width: 20px;
+    height: 3px;
+    border-radius: 2.5px;
+} */
+
+.menuBtn:hover {
+    border: 2.5px solid var(--t-dark);
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 3px;
+    border-radius: 2.5px;
+    background-color: var(--s-dark);
+    transition: transform 250ms ease, background 250ms ease;
+}
+
+.hamburger::before {
+    transform: translateY(-5px);
+}
+
+.hamburger::after {
+    transform: translateY(5px);
+}
+
+.menuBtn:hover .hamburger {
+    background-color: transparent;
+}
+
+.menuBtn:hover .hamburger::before {
+    transform: rotateZ(45deg);
+}
+
+.menuBtn:hover .hamburger::after {
+    transform: rotateZ(-45deg);
+}
+
 @media (min-width:768px) {
+    .hamMenu {
+        /*hiding hamburger menu on large screens*/
+        display: none;
+    }
+
     .navLinks {
         display: flex;
         justify-content: space-between;
@@ -54,7 +118,8 @@
         cursor: pointer;
         font-size: 1.75rem;
     }
-    .user{
+
+    .user {
         gap: 1.5rem;
     }
 

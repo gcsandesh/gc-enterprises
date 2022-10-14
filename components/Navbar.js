@@ -6,9 +6,17 @@ import { faShoppingBag, faUserAlt } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
+      {/* <div> */}
+      <div className={styles.menuBtn}>
+        <div className={styles.hamburger}></div>
+        {/* <div className={styles.hamburgerTop}></div>
+        <div className={styles.hamburgerMiddle}></div>
+        <div className={styles.hamburgerBottom}></div> */}
+      </div>
       <div className={styles.siteTitle}>
         <Link href={"/"}>GC Enterprises</Link>
       </div>
+      {/* </div> */}
       <ul className={styles.navLinks}>
         <li>
           <Link href={"/"}>Home</Link>

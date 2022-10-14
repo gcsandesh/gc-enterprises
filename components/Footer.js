@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.aboveFooter}>
         <div className={`container}`}>
-          <div class={styles.aboveFooter__content}>
+          <div className={styles.aboveFooter__content}>
             <div className={styles.footerCol}>
               <div className={styles.siteInfo}>
                 <h1 className={styles.siteTitle}>GC Enterprises</h1>
