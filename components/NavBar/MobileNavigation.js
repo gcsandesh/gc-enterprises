@@ -1,4 +1,4 @@
-import styles from "../../styles/NavBar.module.css";
+import styles from "./NavBar.module.css";
 import React from "react";
 import NavLinks from "./NavLinks";
 
