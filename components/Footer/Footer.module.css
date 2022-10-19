@@ -25,17 +25,12 @@
     gap: 1.5rem;
 }
 
-.footerCol:nth-child(1) {
-    text-align: center;
-}
-
-.footerCol:nth-child(2) {
-    display: flex;
-    justify-content: space-between;
-}
-
 .footerCol {
     width: 100%;
+}
+
+.footerCol:nth-child(1) {
+    text-align: center;
 }
 
 .siteTitle {
@@ -51,9 +46,10 @@
     line-height: 3rem;
 }
 
-.footer>li::after{
-    content:" ";
+.footer>li::after {
+    content: " ";
 }
+
 .footerMenu>li:hover::after {
     content: " <-";
 }
@@ -79,6 +75,8 @@
 
     .footerCol {
         padding: 0;
+        display: flex;
+        justify-content: space-around;
     }
 
     .siteTitle {
