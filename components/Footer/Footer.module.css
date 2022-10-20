@@ -1,5 +1,6 @@
 .footer {
-    margin-top: 2.5rem;
+    margin-top: auto;
+    /*to place footer always at the bottom of every page*/
     font-size: 1.1rem;
     width: 100%;
     color: var(--p-light);

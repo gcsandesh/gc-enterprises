@@ -33,6 +33,7 @@
     flex-direction: column;
     justify-content: space-between;
     list-style: none;
+    font-weight: 600;
     /* width: 100%; */
     background-color: var(--p-light);
 }
@@ -92,6 +93,7 @@
 
     .Navigation .navLinks>li {
         text-transform: uppercase;
+        font-weight: 800;
         letter-spacing: 0.1rem;
         border-bottom: 2px solid transparent;
         transition: border 250ms ease-in-out;
@@ -103,6 +105,7 @@
 
     .siteTitle {
         font-size: 2rem;
+        font-weight: 900;
     }
 
 

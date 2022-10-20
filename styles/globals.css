@@ -10,6 +10,7 @@
 
 *::selection {
   background-color: #adb5bd;
+  color: var(--lightest);
 }
 
 :root {
@@ -40,12 +41,19 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 }
 
-.container {
+main, .container {
   max-width: 1111px;
   margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  padding: 1.5rem;
 }
 
 @media (min-width: 1024px) {
