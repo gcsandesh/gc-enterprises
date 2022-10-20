@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./ProductCard.module.css";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,10 +8,12 @@ export default function ProductCard({ eachProduct }) {
   return (
     <div className={styles.productCard}>
       <div className={styles.productImgContainer}>
-        <img
-          // src={eachProduct.image}
+        <Image
+          src={eachProduct.image}
           className={styles.productImg}
           alt="Clothing Item"
+          width="200"
+          height="225"
         />
       </div>
 

@@ -46,10 +46,12 @@
 .rating {
     font-size: 1.2rem;
 }
-.ratingCount{
+
+.ratingCount {
     color: var(--q-dark);
     font-size: 1rem;
 }
+
 .price {
     font-size: 1.25rem;
     line-height: 2.5rem;
