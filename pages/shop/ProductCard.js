@@ -7,7 +7,11 @@ export default function ProductCard({ eachProduct }) {
   return (
     <div className={styles.productCard}>
       <div className={styles.productImgContainer}>
-        <img src={eachProduct.image} className={styles.productImg} />
+        <img
+          src={eachProduct.image}
+          className={styles.productImg}
+          alt="Clothing Item"
+        />
       </div>
 
       <div>
@@ -15,7 +19,10 @@ export default function ProductCard({ eachProduct }) {
           <span>
             <FontAwesomeIcon icon={faStar} className={styles.ratingStar} />
           </span>
-          <span className={styles.rating}>{eachProduct.rating.rate}</span> <span className={styles.ratingCount}>({eachProduct.rating.count} reviews)</span>
+          <span className={styles.rating}>{eachProduct.rating.rate}</span>{" "}
+          <span className={styles.ratingCount}>
+            ({eachProduct.rating.count} reviews)
+          </span>
         </div>
         <h3 className={styles.title}>{eachProduct.title}</h3>
         <div className={styles.priceContainer}>
@@ -25,8 +32,8 @@ export default function ProductCard({ eachProduct }) {
       </div>
 
       {/* <div> */}
-        <button className={styles.shopNowBtn}>Shop Now</button>
-        <button className={styles.addToCartBtn}>Add to Cart</button>
+      <button className={styles.shopNowBtn}>Shop Now</button>
+      <button className={styles.addToCartBtn}>Add to Cart</button>
       {/* </div> */}
     </div>
   );
