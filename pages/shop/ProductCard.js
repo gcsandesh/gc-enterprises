@@ -8,7 +8,7 @@ export default function ProductCard({ eachProduct }) {
     <div className={styles.productCard}>
       <div className={styles.productImgContainer}>
         <img
-          src={eachProduct.image}
+          // src={eachProduct.image}
           className={styles.productImg}
           alt="Clothing Item"
         />
