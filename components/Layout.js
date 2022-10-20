@@ -6,7 +6,7 @@ export const Layout = (props) => {
   return (
     <div className="root">
       <NavBar />
-      {props.children}
+      <main>{props.children}</main>
       <Footer />
     </div>
   );

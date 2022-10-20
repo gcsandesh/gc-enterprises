@@ -1,0 +1,27 @@
+.section {
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+.sectionTitle {
+    font-weight: 800;
+    text-align: center;
+    border-top: 2px solid var(--t-dark);
+    border-bottom: 2px solid var(--t-dark);
+}
+
+.allProductCards {
+    margin: 2rem auto;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-type: y mandatory;
+}
+
+@media (min-width: 425px) {
+    .allProductCards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
