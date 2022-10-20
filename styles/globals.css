@@ -26,6 +26,10 @@
   --p-dark: #212529;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 1.4rem;
   color: var(--s-dark);
@@ -37,6 +41,7 @@ a {
 }
 
 .root {
+  margin-top: 3rem;
   height: 100vh;
   display: flex;
   flex-direction: column;

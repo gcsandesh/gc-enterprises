@@ -27,6 +27,7 @@ export default function ProductCard({ product }) {
             ({product.rating.count} reviews)
           </span>
         </div>
+
         <h3 className={styles.title}>{product.title}</h3>
         <div className={styles.priceContainer}>
           <strong>$</strong>{" "}
