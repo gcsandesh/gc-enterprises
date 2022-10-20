@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Shop.module.css";
-import ProductCard from "./ProductCard";
+import ProductCard from "../../components/ProductCard/ProductCard";
 
 export async function getStaticProps() {
   // getting men's  items
@@ -32,8 +32,8 @@ export default function Shop({ data }) {
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>For Women</h2>
         <div className={styles.allProductCards}>
-          {womensClothing.map((product) => (
-            <ProductCard eachProduct={product} key={product.id} />
+          {womensClothing.map((eachProduct) => (
+            <ProductCard product={eachProduct} key={eachProduct.id} />
           ))}
         </div>
       </section>
@@ -41,8 +41,8 @@ export default function Shop({ data }) {
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>For Men</h2>
         <div className={styles.allProductCards}>
-          {mensClothing.map((product) => (
-            <ProductCard eachProduct={product} key={product.id} />
+          {mensClothing.map((eachProduct) => (
+            <ProductCard product={eachProduct} key={eachProduct.id} />
           ))}
         </div>
       </section>

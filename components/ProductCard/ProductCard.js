@@ -4,12 +4,12 @@ import styles from "./ProductCard.module.css";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function ProductCard({ eachProduct }) {
+export default function ProductCard({ product }) {
   return (
     <div className={styles.productCard}>
       <div className={styles.productImgContainer}>
         <Image
-          src={eachProduct.image}
+          src={product.image}
           className={styles.productImg}
           alt="Clothing Item"
           width="200"
@@ -22,15 +22,15 @@ export default function ProductCard({ eachProduct }) {
           <span>
             <FontAwesomeIcon icon={faStar} className={styles.ratingStar} />
           </span>
-          <span className={styles.rating}>{eachProduct.rating.rate}</span>{" "}
+          <span className={styles.rating}>{product.rating.rate}</span>{" "}
           <span className={styles.ratingCount}>
-            ({eachProduct.rating.count} reviews)
+            ({product.rating.count} reviews)
           </span>
         </div>
-        <h3 className={styles.title}>{eachProduct.title}</h3>
+        <h3 className={styles.title}>{product.title}</h3>
         <div className={styles.priceContainer}>
           <strong>$</strong>{" "}
-          <span className={styles.price}>{eachProduct.price}</span>
+          <span className={styles.price}>{product.price}</span>
         </div>
       </div>
 

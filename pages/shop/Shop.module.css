@@ -3,9 +3,15 @@
     margin-top: 1rem;
 }
 
+.section+.section {
+    margin-top: 10rem;
+}
+
 .sectionTitle {
     font-weight: 800;
     text-align: center;
+    line-height: 4rem;
+    margin: 0 auto 5rem auto;
     border-top: 2px solid var(--t-dark);
     border-bottom: 2px solid var(--t-dark);
 }
