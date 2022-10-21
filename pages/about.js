@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
+import Head from "next/head";
 
 export default function About() {
   return (
-    <div>About</div>
-  )
+    <>
+      <Head>
+        <title>About - GC Enterprises</title>
+      </Head>
+      <div>About</div>
+    </>
+  );
 }

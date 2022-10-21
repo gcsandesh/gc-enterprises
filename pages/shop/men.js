@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import styles from "./Shop.module.css";
+import Head from "next/head";
 
 export async function getStaticProps() {
   const response = await fetch(
@@ -16,13 +17,18 @@ export async function getStaticProps() {
 }
 export default function Men({ data }) {
   return (
-    <section className={styles.section}>
-      <h2 className={styles.sectionTitle}>Men</h2>
-      <div className={styles.allProductCards}>
-        {data.map((eachProduct) => (
-          <ProductCard product={eachProduct} key={eachProduct.id} />
-        ))}
-      </div>
-    </section>
+    <>
+      <Head>
+        <title>Men's Clothings - GC Enterprises</title>
+      </Head>
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>Men</h2>
+        <div className={styles.allProductCards}>
+          {data.map((eachProduct) => (
+            <ProductCard product={eachProduct} key={eachProduct.id} />
+          ))}
+        </div>
+      </section>
+    </>
   );
 }

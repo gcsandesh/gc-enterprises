@@ -1,9 +1,13 @@
 import Link from "next/link";
 import React from "react";
-import Image from "next/image";
+import Head from "next/head";
 
 export default function NotFound() {
   return (
+    <>
+    <Head>
+      <title>404 : Page not found</title>
+    </Head>
     <div>
       {/* <h1>404: Wrong Turn?</h1> */}
       <h1>404: Surprise motherfucker!!</h1>
@@ -16,5 +20,6 @@ export default function NotFound() {
         </Link>
       </div>
     </div>
+    </>
   );
 }
