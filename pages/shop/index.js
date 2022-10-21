@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Shop.module.css";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import Head from "next/head";
 
 export async function getStaticProps() {
   // getting men's  items
@@ -28,24 +29,29 @@ export async function getStaticProps() {
 export default function Shop({ data }) {
   const { mensClothing, womensClothing } = data;
   return (
-    <div>
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>For Women</h2>
-        <div className={styles.allProductCards}>
-          {womensClothing.map((eachProduct) => (
-            <ProductCard product={eachProduct} key={eachProduct.id} />
-          ))}
-        </div>
-      </section>
+    <>
+      <Head>
+        <title>Shop - GC Enterprises</title>
+      </Head>
+      <div>
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>For Women</h2>
+          <div className={styles.allProductCards}>
+            {womensClothing.map((eachProduct) => (
+              <ProductCard product={eachProduct} key={eachProduct.id} />
+            ))}
+          </div>
+        </section>
 
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>For Men</h2>
-        <div className={styles.allProductCards}>
-          {mensClothing.map((eachProduct) => (
-            <ProductCard product={eachProduct} key={eachProduct.id} />
-          ))}
-        </div>
-      </section>
-    </div>
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>For Men</h2>
+          <div className={styles.allProductCards}>
+            {mensClothing.map((eachProduct) => (
+              <ProductCard product={eachProduct} key={eachProduct.id} />
+            ))}
+          </div>
+        </section>
+      </div>
+    </>
   );
 }
