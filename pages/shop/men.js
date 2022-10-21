@@ -16,17 +16,13 @@ export async function getStaticProps() {
 }
 export default function Men({ data }) {
   return (
-    <div>
-      <main className={styles.main}>
-        <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>Men</h2>
-          <div className={styles.allProductCards}>
-            {data.map((eachProduct) => (
-              <ProductCard product={eachProduct} key={eachProduct.id} />
-            ))}
-          </div>
-        </section>
-      </main>
-    </div>
+    <section className={styles.section}>
+      <h2 className={styles.sectionTitle}>Men</h2>
+      <div className={styles.allProductCards}>
+        {data.map((eachProduct) => (
+          <ProductCard product={eachProduct} key={eachProduct.id} />
+        ))}
+      </div>
+    </section>
   );
 }

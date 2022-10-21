@@ -28,7 +28,7 @@ export async function getStaticProps() {
 export default function Shop({ data }) {
   const { mensClothing, womensClothing } = data;
   return (
-    <main className={styles.main}>
+    <div>
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>For Women</h2>
         <div className={styles.allProductCards}>
@@ -46,6 +46,6 @@ export default function Shop({ data }) {
           ))}
         </div>
       </section>
-    </main>
+    </div>
   );
 }

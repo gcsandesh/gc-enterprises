@@ -14,6 +14,7 @@ export default function ProductCard({ product }) {
           alt="Clothing Item"
           width="200"
           height="225"
+          loading="lazy"
         />
       </div>
 
