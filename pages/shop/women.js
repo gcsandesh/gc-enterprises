@@ -19,7 +19,7 @@ export default function Women({ data }) {
   return (
     <>
       <Head>
-        <title>Women's Clothings - GC Enterprises</title>
+        <title>Women&apos;s Clothings - GC Enterprises</title>
       </Head>
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Women</h2>
