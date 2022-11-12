@@ -10,23 +10,31 @@ import styles from "./Footer.module.css";
 
 function OrderNow() {
   return (
-    <div>
+    <div className={styles.details}>
       <h3 className={styles.footerMenu__title}>Order Now</h3>
       <p>
-        <FontAwesomeIcon className={styles.icon} icon={faUser} />
-        GC Enterprises
+        <span>
+          <FontAwesomeIcon className={styles.icon} icon={faUser} />
+        </span>
+        <span>GC Enterprises</span>
       </p>
       <p>
-        <FontAwesomeIcon className={styles.icon} icon={faPhone} />
-        +977-9876543210
+        <span>
+          <FontAwesomeIcon className={styles.icon} icon={faPhone} />
+        </span>
+        <span>+977-9876543210</span>
       </p>
       <p>
-        <FontAwesomeIcon className={styles.icon} icon={faLocationPin} /> Butwal
-        11, Kalikanagar
+        <span>
+          <FontAwesomeIcon className={styles.icon} icon={faLocationPin} />{" "}
+        </span>
+        <span>Butwal- 11, Kalikanagar</span>
       </p>
       <p>
-        <FontAwesomeIcon className={styles.icon} icon={faEnvelope} />{" "}
-        info@gcstore.com.np
+        <span>
+          <FontAwesomeIcon className={styles.icon} icon={faEnvelope} />{" "}
+        </span>
+        <span>info@gcstore.com.np</span>
       </p>
     </div>
   );

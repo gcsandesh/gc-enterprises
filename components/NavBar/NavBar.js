@@ -35,20 +35,24 @@ export default function NavBar() {
         )}
       </div>
       {/* site title / logo (and tagline) */}
-      <div className={styles.siteTitle}>
-        <Link href={"/"}>GC Enterprises</Link>
-      </div>
-      {/* the nav links */}
-      {menuIsOpen && <MobileNavigation toggleMenu={toggleMenu} />}
-      <Navigation />
-      {/* user account and cart options on the right */}
-      <div className={styles.user}>
+      <div className={`${styles.navBarContent} container`}>
+        <div className={styles.siteTitle}>
+          <Link href={"/"}>GC Enterprises</Link>
+        </div>
+
+        {/* the nav links */}
+        {menuIsOpen && <MobileNavigation toggleMenu={toggleMenu} />}
+        <Navigation />
+
+        {/* user account and cart options on the right */}
+        <div className={styles.userControls}>
         <Link href={"/cart"}>
           <FontAwesomeIcon className={styles.fa__icon} icon={faShoppingBag} />
         </Link>
         <Link href={"/my-account"}>
           <FontAwesomeIcon className={styles.fa__icon} icon={faUserAlt} />
         </Link>
+        </div>
       </div>
     </div>
   );

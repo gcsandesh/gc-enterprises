@@ -1,69 +1,43 @@
 .navBar {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 99;
     background-color: var(--lightest);
-}
-
-.siteTitle {
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-weight: 600;
-    font-family: 'Baskervville', serif;
-}
-
-.Navigation {
-    display: none;
-}
-
-.MobileNavigation {
-    position: absolute;
     display: flex;
-    flex-direction: column;
-    left: 0px;
-    top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.navBarContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
     width: 100%;
 }
 
-.MobileNavigation .navLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    list-style: none;
-    font-weight: 600;
-    /* width: 100%; */
-    background-color: var(--p-light);
-}
-
-.MobileNavigation .navLinks>li {
-    border-bottom: 1px solid var(--q-light);
-    height: 25px;
-    padding: 1rem 0 2.5rem 5rem;
-}
-
-.MobileNavigation .navLinks>li:hover {
-    background-color: var(--s-light);
+.siteTitle {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+    font-family: 'Baskervville', serif;
 }
 
 .fa__icon {
     cursor: pointer;
-    font-size: 1.75rem;
+    width: 1.75rem;
+    height: 1.75rem;
 }
 
-.user {
+.userControls {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    font-size: 1.5rem;
+    gap: 1.5rem;
 }
 
 .menuBtn {
@@ -74,54 +48,31 @@
     align-items: center;
 }
 
+/* LAPTOPS */
 @media (min-width:768px) {
+    .navBar {
+        padding: 0rem;
+    }
+
     .menuBtn {
-        /*hiding hamburger menu on large screens*/
+        /*hiding hamburger menu btn on large screens*/
         display: none;
-    }
-
-    .MobileNavigation {
-        display: none;
-    }
-
-    .Navigation {
-        display: flex;
-    }
-
-    .Navigation .navLinks {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        flex-direction: row;
-        gap: 2.5rem;
-    }
-
-    .Navigation .navLinks>li {
-        text-transform: uppercase;
-        font-weight: 800;
-        letter-spacing: 0.1rem;
-        border-bottom: 2px solid transparent;
-        transition: border 250ms ease-in-out;
-    }
-
-    .Navigation .navLinks>li:hover {
-        border-bottom: 2px solid var(--q-dark);
     }
 
     .siteTitle {
         font-size: 2rem;
-        font-weight: 900;
+        margin: 0;
     }
 
-
-    .user {
-        gap: 1.5rem;
+    .navBarContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
     }
 
-}
-
-@media (min-width:1700px) {
-    .siteTitle {
-        font-size: 3rem;
+    .userControls {
+        display: flex;
     }
+
 }

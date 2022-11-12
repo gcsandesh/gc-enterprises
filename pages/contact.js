@@ -7,7 +7,7 @@ export default function Contact() {
       <Head>
         <title>Contact - GC Enterprises</title>
       </Head>
-      <div>Contact</div>;
+      <div>Contact</div>
     </>
   );
 }
