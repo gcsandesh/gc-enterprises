@@ -26,7 +26,7 @@ export default function AboutUs() {
         <p>
           GC Enterprises is the one-stop solution for all your clothing needs.
           <br />
-          Don't take my word for it, see for yourself!
+          Don&lsquo;t take my word for it, see for yourself!
         </p>
 
         <p>
