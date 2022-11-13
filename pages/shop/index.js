@@ -36,7 +36,7 @@ export default function Shop({ data }) {
       <div>
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>For Women</h2>
-          <div className={styles.allProductCards}>
+          <div className={`${styles.allProductCards} container`}>
             {womensClothing.map((eachProduct) => (
               <ProductCard product={eachProduct} key={eachProduct.id} />
             ))}
@@ -45,7 +45,7 @@ export default function Shop({ data }) {
 
         <section className={styles.section}>
           <h2 className={styles.sectionTitle}>For Men</h2>
-          <div className={styles.allProductCards}>
+          <div className={`${styles.allProductCards} container`}>
             {mensClothing.map((eachProduct) => (
               <ProductCard product={eachProduct} key={eachProduct.id} />
             ))}
