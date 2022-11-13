@@ -66,6 +66,12 @@ main {
   margin-top: 3rem;
 }
 
+.sectionTitle {
+  line-height: 7rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
 @media (min-width: 1024px) {
   html {
     font-size: 1.6rem;

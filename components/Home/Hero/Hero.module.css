@@ -23,3 +23,13 @@
     font-size: 5rem;
     color: var(--p-light);
 }
+
+@media (min-width: 1111px) {
+    .heroText__heading {
+        font-size: 7rem;
+    }
+
+    .heroText {
+        font-size: 3.5rem;
+    }
+}
