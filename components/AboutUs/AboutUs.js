@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 import styles from "./AboutUs.module.css";
 import founderImage from "../../public/images/founderImage.jpg";
 
@@ -9,13 +10,18 @@ export default function AboutUs() {
       <h2 className="sectionTitle">About Us</h2>
       <div className={`${styles.details} container`}>
         <p className={styles.founderImageContainer}>
-          <Image
-            src={founderImage}
-            className={styles.founderImage}
-            width={1}
-            height={1}
-            layout="responsive"
-          />
+          <Link href="https://www.gcsandesh.com.np">
+            <a target="_blank">
+              <Image
+                src={founderImage}
+                className={styles.founderImage}
+                width={1}
+                height={1}
+                layout="responsive"
+                alt="Sandesh GC, the founder of GC Enterprises"
+              />
+            </a>
+          </Link>
         </p>
         <p>
           GC Enterprises is the one-stop solution for all your clothing needs.

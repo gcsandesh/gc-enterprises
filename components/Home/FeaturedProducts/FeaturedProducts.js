@@ -16,6 +16,7 @@ export default function FeaturedProducts() {
                 width={3}
                 height={4}
                 layout="responsive"
+                alt="Rain Jacket Women Windbreaker Striped Climbing Raincoats"
               />
               <span className={styles.tooltip}>
                 Rain Jacket Women Windbreaker Striped Climbing Raincoats
@@ -33,6 +34,7 @@ export default function FeaturedProducts() {
                 width={3}
                 height={4}
                 layout="responsive"
+                alt="Mens Casual Slim Fit"
               />
               <span className={styles.tooltip}>
                 Mens Casual Slim Fit <br />
@@ -49,6 +51,7 @@ export default function FeaturedProducts() {
                 width={3}
                 height={4}
                 layout="responsive"
+                alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
               />
               <span className={styles.tooltip}>
                 Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
