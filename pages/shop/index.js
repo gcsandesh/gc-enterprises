@@ -34,7 +34,7 @@ export default function Shop({ data }) {
         <title>Shop - GC Enterprises</title>
       </Head>
       <div>
-        <section className={styles.section}>
+        <section className={`${styles.section} container`}>
           <h2 className={styles.sectionTitle}>For Women</h2>
           <div className={styles.allProductCards}>
             {womensClothing.map((eachProduct) => (

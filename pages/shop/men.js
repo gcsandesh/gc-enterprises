@@ -21,7 +21,7 @@ export default function Men({ data }) {
       <Head>
         <title>Men&apos;s Clothings - GC Enterprises</title>
       </Head>
-      <section className={styles.section}>
+      <section className={`${styles.section} container`}>
         <h2 className={styles.sectionTitle}>Men</h2>
         <div className={styles.allProductCards}>
           {data.map((eachProduct) => (

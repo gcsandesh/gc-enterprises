@@ -48,7 +48,7 @@ a {
   align-items: center;
 }
 
-main, .container {
+.container {
   max-width: 1111px;
   margin: 0 auto;
 }
@@ -62,7 +62,7 @@ li {
 }
 
 main {
-  padding: 1.5rem;
+  width: 100%;
   margin-top: 3rem;
 }
 
@@ -77,43 +77,3 @@ main {
     font-size: 2.5rem;
   }
 }
-
-/* PRELOADER START */
-.preloader {
-  width: 15px;
-  aspect-ratio: 1;
-  position: relative;
-}
-
-.preloader::before,
-.preloader::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: #000;
-}
-
-.preloader::before {
-  box-shadow: -25px 0;
-  animation: preloader-1 1s infinite linear;
-}
-
-.preloader::after {
-  transform: rotate(0deg) translateX(25px);
-  animation: preloader-2 1s infinite linear;
-}
-
-@keyframes preloader-1 {
-  100% {
-    transform: translateX(25px)
-  }
-}
-
-@keyframes preloader-2 {
-  100% {
-    transform: rotate(-180deg) translateX(25px)
-  }
-}
-
-/* PRELOADER END */
