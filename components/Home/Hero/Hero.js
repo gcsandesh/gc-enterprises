@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import heroImage from "../../../public/hero-image.jpg";
 import styles from "./Hero.module.css";
 
 export default function Hero() {

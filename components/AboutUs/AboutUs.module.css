@@ -1,0 +1,23 @@
+.section {
+    padding: 5rem 0 10rem 0;
+    text-align: center;
+    background-color: var(--t-light);
+}
+
+.details {
+    width: 75%;
+}
+
+.details>p {
+    margin: 1rem auto;
+}
+
+.founderImageContainer {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.founderImage {
+    border-radius: 50%;
+}
