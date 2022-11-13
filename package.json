@@ -1,6 +1,6 @@
 {
   "name": "gc-clothing-store",
-  "version": "2.1.2",
+  "version": "2.1.5",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -15,7 +15,8 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0"
   },
   "devDependencies": {
     "eslint": "8.25.0",
