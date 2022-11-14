@@ -20,8 +20,8 @@
 }
 
 .heroText__heading {
-    font-size: 5rem;
     color: var(--p-light);
+    font-size: 5rem;
 }
 
 @media (min-width: 1111px) {

@@ -15,7 +15,7 @@
 .productCard {
     position: relative;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 7px;
+    border-radius: 10px;
     padding: 2.5rem;
     height: 250px;
     width: 200px;
@@ -27,13 +27,14 @@
 }
 
 .tooltip {
-    visibility: hidden;
-    opacity: 0;
+    visibility: visible;
+    opacity: 1;
     position: absolute;
     padding: 1rem;
     left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 0 0 10px 10px;
     color: var(--p-light);
     background-color: var(--p-dark);
     transition: all 250ms ease;
@@ -43,16 +44,19 @@
     color: var(--q-light);
 }
 
-.productCard:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
-
 @media (min-width:768px) {
     .products {
         flex-direction: row;
         justify-content: center;
     }
 
+    .tooltip {
+        visibility: hidden;
+        opacity: 0;
+    }
 
+    .productCard:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
 }
