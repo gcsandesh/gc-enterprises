@@ -7,7 +7,8 @@ export default function Hero() {
       <div className={`${styles.heroContent} container`}>
         <div className={styles.heroText}>
           <h1 className={styles.heroText__heading}>
-            Welcome to GC Clothing Store
+            Welcome to <br />
+            GC Enterprises
           </h1>
           <p>Shop, Wear, Feel</p>
         </div>
