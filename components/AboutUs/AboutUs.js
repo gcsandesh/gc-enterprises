@@ -10,8 +10,7 @@ export default function AboutUs() {
       <h2 className="sectionTitle">About Us</h2>
       <div className={`${styles.details} container`}>
         <p className={styles.founderImageContainer}>
-          <Link href="https://www.gcsandesh.com.np">
-            <a target="_blank">
+          <Link href="https://www.gcsandesh.com.np" target="_blank">
               <Image
                 src={founderImage}
                 className={styles.founderImage}
@@ -20,7 +19,6 @@ export default function AboutUs() {
                 layout="responsive"
                 alt="Sandesh GC, the founder of GC Enterprises"
               />
-            </a>
           </Link>
         </p>
         <p>

@@ -14,9 +14,9 @@ export default function NotFound() {
       <div>
         Go back to the{" "}
         <Link href={"/"}>
-          <a style={{ textDecoration: "underline", color: "var(--q-dark)" }}>
+          <span style={{ textDecoration: "underline", color: "var(--q-dark)" }}>
             Home page
-          </a>
+          </span>
         </Link>
       </div>
     </div>

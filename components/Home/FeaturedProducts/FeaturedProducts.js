@@ -9,8 +9,7 @@ export default function FeaturedProducts() {
       <h2 className="sectionTitle">Featured Products</h2>
       <div className={styles.products}>
         <div className={styles.productCard}>
-          <Link href={"/shop/products/17"}>
-            <a>
+          <Link href={"/shop/products/17"} target="_blank">
               <Image
                 src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"
                 width={3}
@@ -23,12 +22,10 @@ export default function FeaturedProducts() {
                 <br />
                 <span className={styles.price}>$39.99</span>
               </span>
-            </a>
           </Link>
         </div>
         <div className={styles.productCard}>
-          <Link href={"/shop/products/4"}>
-            <a>
+          <Link href={"/shop/products/4"} target="_blank">
               <Image
                 src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
                 width={3}
@@ -40,12 +37,10 @@ export default function FeaturedProducts() {
                 Mens Casual Slim Fit <br />
                 <span className={styles.price}>$15.99</span>
               </span>
-            </a>
           </Link>
         </div>
         <div className={styles.productCard}>
-          <Link href={"/shop/products/1"}>
-            <a>
+          <Link href={"/shop/products/1"} target="_blank">
               <Image
                 src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
                 width={3}
@@ -58,7 +53,6 @@ export default function FeaturedProducts() {
                 <br />
                 <span className={styles.price}>$15.99</span>
               </span>
-            </a>
           </Link>
         </div>
       </div>
